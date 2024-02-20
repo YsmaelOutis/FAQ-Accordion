@@ -23,7 +23,7 @@ main {
   border-radius: 22px;
   padding: 2rem;
   text-align: center;
-  overflow: scroll;
+  overflow: hidden;
 }
 main .illustration-mobile {
   position: absolute;
