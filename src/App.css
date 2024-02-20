@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  display: grid;
+  place-items: center;
+}
+
+main {
+  height: 80%;
+  width: 90%;
+  background-color: #fff;
+  background-image: url("bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 50% 2.5%;
+  border-radius: 22px;
+  padding: 2rem;
+  text-align: center;
+  overflow: scroll;
+}
+main .illustration-mobile {
+  position: absolute;
+  left: 20%;
+  top: 0%;
+  width: 60%;
+}
+main .desktop-images {
+  display: none;
+}
+main h1 {
+  margin-top: 35%;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+main details > p {
+  margin-top: 1rem;
+  text-align: left;
+  color: #787887;
+  font-size: 14px;
+}
+main details summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main details summary p {
+  transition: 0.3s ease;
+}
+main details summary img {
+  transition: transform 0.3s ease;
+}
+main details[open] summary p {
+  font-weight: 700;
+}
+main details[open] summary img {
+  transform: rotate(180deg);
+}
+main .divider {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  background-color: hsl(240, 5%, 91%);
+}
+
+@media (min-width: 450px) {
+  main {
+    height: 80%;
+    background-size: 60%;
+  }
+  main .illustration-mobile {
+    width: 50%;
+    left: 25%;
+  }
+}
+@media (min-width: 925px) {
+  main {
+    height: 60%;
+    width: 80%;
+    background-image: url("bg-pattern-desktop.svg");
+    background-size: 100%;
+    background-position: -650px 70%;
+    text-align: left;
+    display: flex;
+    overflow: hidden;
+  }
+  main .illustration-mobile {
+    display: none;
+  }
+  main .desktop-images {
+    display: block;
+  }
+  main .illustration-desktop {
+    display: block;
+    -o-object-fit: fill;
+       object-fit: fill;
+    width: 100%;
+    position: relative;
+    left: -25%;
+    top: 10%;
+  }
+  main .illustration-box {
+    position: absolute;
+    left: 2%;
+    top: 44%;
+  }
+  main article {
+    width: 50%;
+  }
+  main article h1 {
+    margin-top: 10%;
+  }
+  main article section details > summary {
+    cursor: pointer;
+  }
+}
+@media (min-width: 1250px) {
+  main {
+    height: 60%;
+    width: 60%;
+  }
+  main .illustration-box {
+    position: absolute;
+    left: 14.5%;
+    top: 44%;
+  }
+}/*# sourceMappingURL=App.css.map */
